@@ -44,13 +44,15 @@ How to train
 
 Steps to generate three different training models :
 a) python training_model.py -d samples -e ResNet50V2 -m ResNet50V2.model -p ResNet50V2.png
+
 b) python training_model.py -d samples -e MobileNetV2 -m MobileNetV2.model -p MobileNetV2.png
+
 c) python training_model.py -d samples -e InceptionV3 -m InceptionV3.model -p InceptionV3.png
-The given zip file contains all the models. This step can be skipped.
 
-How to run the real time detector
 
-For real time video detection with different models: (any of the given three commands can be used to run)
+How to run the real time detector : 
+For real time video detection with different models: (Use model trained in the previous step to execute)
+
 a) python video_scan.py -m ResNet50V2.model
 b) python video_scan.py -m MobileNetV2.model
 c) python video_scan.py -m InceptionV3.model
