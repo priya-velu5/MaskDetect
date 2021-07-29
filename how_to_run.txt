@@ -1,0 +1,17 @@
+steps to generate three different training models :
+
+ python training_model.py -d samples -e ResNet50V2 -m ResNet50V2.model -p ResNet50V2.png
+ python training_model.py -d samples -e MobileNetV2 -m MobileNetV2.model -p MobileNetV2.png
+ python training_model.py -d samples -e InceptionV3 -m InceptionV3.model -p InceptionV3.png
+
+
+For image scanning with different models
+python image_scan.py --image images/pic1.jpg -m ResNet50V2.model
+python image_scan.py --image images/pic1.jpg -m MobileNetV2.model
+python image_scan.py --image images/pic1.jpg -m InceptionV3.model  
+
+
+For real time video scanning with different models
+python video_scan.py  -m ResNet50V2.model
+python video_scan.py  -m MobileNetV2.model
+python video_scan.py  -m InceptionV3.model  
